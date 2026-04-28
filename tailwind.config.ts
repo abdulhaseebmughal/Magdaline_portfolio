@@ -59,9 +59,16 @@ export default {
         },
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "4px",
+        md: "4px",
+        sm: "2px",
+        none: "0",
+      },
+      fontFamily: {
+        sans: ["'IBM Plex Sans'", "system-ui", "sans-serif"],
+      },
+      maxWidth: {
+        content: "1100px",
       },
       keyframes: {
         "accordion-down": {

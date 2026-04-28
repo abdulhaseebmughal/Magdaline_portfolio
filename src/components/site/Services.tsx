@@ -30,7 +30,6 @@ const Services = () => {
               className="reveal p-10 bg-background"
               style={{
                 border: "1px solid hsl(var(--border))",
-                borderTop: "3px solid hsl(var(--accent))",
                 borderRadius: 4,
               }}
             >

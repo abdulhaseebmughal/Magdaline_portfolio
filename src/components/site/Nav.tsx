@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 const links = [
-  { num: "01", label: "Work", href: "#work" },
-  { num: "02", label: "Services", href: "#services" },
-  { num: "03", label: "About", href: "#about" },
-  { num: "04", label: "Newsletter", href: "#newsletter" },
+  { label: "Work", href: "#work" },
+  { label: "Services", href: "#services" },
+  { label: "About", href: "#about" },
+  { label: "Newsletter", href: "#newsletter" },
 ];
 
 const Nav = () => {
@@ -68,36 +68,12 @@ const Nav = () => {
               <a
                 key={l.href}
                 href={l.href}
-                className="group flex items-baseline gap-1.5 px-3 py-1.5 text-[13px] text-foreground/80 hover:text-foreground transition-colors"
-                style={{ borderRadius: 2 }}
+                className="px-3 py-1.5 text-[13px] text-foreground/80 hover:text-foreground transition-colors"
+                style={{ borderRadius: 2, fontWeight: 400 }}
               >
-                <span
-                  className="text-[10px] tabular-nums"
-                  style={{ color: "hsl(var(--accent))", fontWeight: 500 }}
-                >
-                  {l.num}
-                </span>
-                <span style={{ fontWeight: 400 }}>{l.label}</span>
+                {l.label}
               </a>
             ))}
-          </div>
-
-          {/* Status + CTA */}
-          <div className="flex items-center gap-3 ml-4">
-            <span className="flex items-center gap-2 text-[11px] uppercase text-muted-foreground"
-              style={{ letterSpacing: "0.1em" }}>
-              <span className="relative flex h-1.5 w-1.5">
-                <span
-                  className="absolute inline-flex h-full w-full animate-ping opacity-75"
-                  style={{ backgroundColor: "hsl(var(--accent))", borderRadius: 4 }}
-                />
-                <span
-                  className="relative inline-flex h-1.5 w-1.5"
-                  style={{ backgroundColor: "hsl(var(--accent))", borderRadius: 4 }}
-                />
-              </span>
-              Booking Q3
-            </span>
           </div>
         </nav>
 
@@ -142,26 +118,12 @@ const Nav = () => {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="flex items-baseline gap-3 py-3 text-[15px] text-foreground"
+                className="py-3 text-[15px] text-foreground"
                 style={{ borderBottom: "1px solid hsl(var(--border))" }}
               >
-                <span
-                  className="text-[11px] tabular-nums"
-                  style={{ color: "hsl(var(--accent))", fontWeight: 500 }}
-                >
-                  {l.num}
-                </span>
                 {l.label}
               </a>
             ))}
-            <span className="flex items-center gap-2 text-[11px] uppercase text-muted-foreground mt-5"
-              style={{ letterSpacing: "0.1em" }}>
-              <span
-                className="inline-flex h-1.5 w-1.5"
-                style={{ backgroundColor: "hsl(var(--accent))", borderRadius: 4 }}
-              />
-              Booking Q3
-            </span>
           </nav>
         </div>
       )}

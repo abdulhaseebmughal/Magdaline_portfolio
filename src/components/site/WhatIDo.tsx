@@ -37,7 +37,6 @@ const WhatIDo = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
           {items.map((it) => (
             <div key={it.title} className="reveal">
-              <div style={{ height: 2, width: 40, backgroundColor: "hsl(var(--accent))" }} className="mb-6" />
               <h3 className="text-[18px] font-semibold mb-3">{it.title}</h3>
               <p className="text-foreground/70 text-[15px]" style={{ fontWeight: 300 }}>{it.desc}</p>
             </div>

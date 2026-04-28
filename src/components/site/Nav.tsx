@@ -118,26 +118,12 @@ const Nav = () => {
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="flex items-baseline gap-3 py-3 text-[15px] text-foreground"
+                className="py-3 text-[15px] text-foreground"
                 style={{ borderBottom: "1px solid hsl(var(--border))" }}
               >
-                <span
-                  className="text-[11px] tabular-nums"
-                  style={{ color: "hsl(var(--accent))", fontWeight: 500 }}
-                >
-                  {l.num}
-                </span>
                 {l.label}
               </a>
             ))}
-            <span className="flex items-center gap-2 text-[11px] uppercase text-muted-foreground mt-5"
-              style={{ letterSpacing: "0.1em" }}>
-              <span
-                className="inline-flex h-1.5 w-1.5"
-                style={{ backgroundColor: "hsl(var(--accent))", borderRadius: 4 }}
-              />
-              Booking Q3
-            </span>
           </nav>
         </div>
       )}

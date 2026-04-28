@@ -35,8 +35,8 @@ const WhatIDo = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
-          {items.map((it) => (
-            <div key={it.title} className="reveal">
+          {items.map((it, i) => (
+            <div key={it.title} className={`reveal stagger-${i + 1}`}>
               <h3 className="text-[18px] font-semibold mb-3">{it.title}</h3>
               <p className="text-foreground/70 text-[15px]" style={{ fontWeight: 300 }}>{it.desc}</p>
             </div>

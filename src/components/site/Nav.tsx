@@ -29,7 +29,7 @@ const Nav = () => {
     >
       <div className="container-x flex items-center justify-between h-16">
         {/* Monogram mark */}
-        <a href="#top" className="flex items-center gap-3 group">
+        <a href="#top" className="flex items-center gap-3 group reveal-blur">
           <span
             className="flex items-center justify-center text-[12px] font-semibold text-white"
             style={{
@@ -43,9 +43,9 @@ const Nav = () => {
             MM
           </span>
           <span className="hidden sm:flex flex-col leading-tight">
-            <span className="text-[13px] font-semibold text-foreground">Magdaline Mwihaki</span>
+            <span className={`text-[13px] font-semibold transition-colors duration-300 ${scrolled ? "text-foreground" : "text-white"}`}>Magdaline Mwihaki</span>
             <span
-              className="text-[10px] uppercase text-muted-foreground"
+              className={`text-[10px] uppercase transition-colors duration-300 ${scrolled ? "text-muted-foreground" : "text-white/60"}`}
               style={{ letterSpacing: "0.12em", fontWeight: 400 }}
             >
               Nairobi · Content Strategy
@@ -56,19 +56,19 @@ const Nav = () => {
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center">
           <div
-            className="flex items-center"
+            className="flex items-center transition-all duration-300"
             style={{
-              border: "1px solid hsl(var(--border))",
+              border: scrolled ? "1px solid hsl(var(--border))" : "1px solid rgba(255,255,255,0.2)",
               borderRadius: 4,
               padding: "4px",
-              backgroundColor: "rgba(255,255,255,0.6)",
+              backgroundColor: scrolled ? "rgba(255,255,255,0.6)" : "rgba(0,0,0,0.2)",
             }}
           >
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
-                className="px-3 py-1.5 text-[13px] text-foreground/80 hover:text-foreground transition-colors"
+                className={`px-3 py-1.5 text-[13px] transition-colors duration-300 ${scrolled ? "text-foreground/80 hover:text-foreground" : "text-white/80 hover:text-white"}`}
                 style={{ borderRadius: 2, fontWeight: 400 }}
               >
                 {l.label}
@@ -84,7 +84,7 @@ const Nav = () => {
           aria-label="Toggle menu"
         >
           <span
-            className="block bg-foreground transition-transform"
+            className={`block transition-all duration-300 ${scrolled ? "bg-foreground" : "bg-white"}`}
             style={{
               width: 22,
               height: 1.5,
@@ -92,11 +92,11 @@ const Nav = () => {
             }}
           />
           <span
-            className="block bg-foreground transition-opacity"
+            className={`block transition-all duration-300 ${scrolled ? "bg-foreground" : "bg-white"}`}
             style={{ width: 16, height: 1.5, opacity: open ? 0 : 1 }}
           />
           <span
-            className="block bg-foreground transition-transform"
+            className={`block transition-all duration-300 ${scrolled ? "bg-foreground" : "bg-white"}`}
             style={{
               width: 22,
               height: 1.5,

@@ -24,10 +24,10 @@ const Services = () => {
         <p className="label-eyebrow text-muted-foreground mb-10 reveal">Offers</p>
         <h2 className="h2-display mb-14 max-w-2xl reveal">Four ways to work together.</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {services.map((s) => (
+          {services.map((s, i) => (
             <div
               key={s.title}
-              className="reveal p-10 bg-background"
+              className={`reveal stagger-${(i % 2) + 1} p-10 bg-background`}
               style={{
                 border: "1px solid hsl(var(--border))",
                 borderRadius: 4,

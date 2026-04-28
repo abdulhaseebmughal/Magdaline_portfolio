@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 export function useReveal() {
   useEffect(() => {
-    const els = document.querySelectorAll<HTMLElement>(".reveal");
+    const els = document.querySelectorAll<HTMLElement>(".reveal, .reveal-blur");
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((e) => {
@@ -12,7 +12,7 @@ export function useReveal() {
           }
         });
       },
-      { threshold: 0.12 }
+      { threshold: 0.1 }
     );
     els.forEach((el) => io.observe(el));
     return () => io.disconnect();

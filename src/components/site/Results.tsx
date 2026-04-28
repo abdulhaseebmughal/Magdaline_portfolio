@@ -25,7 +25,7 @@ const Results = () => {
           {quotes.map((q, i) => (
             <div
               key={q.name}
-              className="reveal grid grid-cols-1 md:grid-cols-12 gap-8 py-10"
+              className={`reveal stagger-${(i % 3) + 1} grid grid-cols-1 md:grid-cols-12 gap-8 py-10`}
               style={{ borderTop: i === 0 ? "1px solid hsl(var(--border))" : undefined, borderBottom: "1px solid hsl(var(--border))" }}
             >
               <p className="md:col-span-8 text-[20px] md:text-[22px] leading-snug" style={{ fontWeight: 300 }}>

@@ -1,3 +1,5 @@
+import ParallaxText from "./ParallaxText";
+
 const quotes = [
   {
     quote: "Magdaline rewrote my LinkedIn bio and three weeks later I had two qualified discovery calls from inbound. The positioning shift did what a year of posting hadn't.",
@@ -18,14 +20,14 @@ const quotes = [
 
 const Results = () => {
   return (
-    <section className="py-24 md:py-[100px]">
+    <section className="py-24 md:py-[100px] relative overflow-hidden">
       <div className="container-x">
         <p className="label-eyebrow text-muted-foreground mb-12 reveal">Results</p>
         <div className="flex flex-col">
           {quotes.map((q, i) => (
             <div
               key={q.name}
-              className={`reveal stagger-${(i % 3) + 1} grid grid-cols-1 md:grid-cols-12 gap-8 py-10`}
+              className={`${i % 2 === 0 ? "reveal-left" : "reveal-right"} stagger-${(i % 3) + 1} grid grid-cols-1 md:grid-cols-12 gap-8 py-10 relative z-10`}
               style={{ borderTop: i === 0 ? "1px solid hsl(var(--border))" : undefined, borderBottom: "1px solid hsl(var(--border))" }}
             >
               <p className="md:col-span-8 text-[20px] md:text-[22px] leading-snug" style={{ fontWeight: 300 }}>

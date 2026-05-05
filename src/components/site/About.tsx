@@ -32,7 +32,7 @@ const About = () => {
         </div>
         <div className="md:col-span-5 reveal">
           <div className="aspect-square w-full max-w-sm md:ml-auto overflow-hidden" style={{ borderRadius: 4 }}>
-            <img src={portrait} alt="Portrait of Magdaline Mwihaki" className="w-full h-full object-cover" loading="lazy" />
+            <img src={portrait} alt="Portrait of Magdaline Mwihaki" className="w-full h-full object-cover object-top" loading="lazy" />
           </div>
         </div>
       </div>

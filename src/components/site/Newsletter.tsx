@@ -12,37 +12,26 @@ const Newsletter = () => {
   };
 
   return (
-    <section id="newsletter" className="py-24 md:py-[100px]" style={{ backgroundColor: "hsl(var(--accent))", color: "#fff" }}>
-      <div className="container-x grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
-        <div className="md:col-span-7 reveal">
-          <p className="label-eyebrow mb-6" style={{ color: "rgba(255,255,255,0.85)", fontSize: 11 }}>Strategic Pen</p>
-          <h2 className="h2-display" style={{ color: "#fff" }}>
-            Get sharper at content strategy — free, every two weeks.
-          </h2>
+    <section id="newsletter" className="py-32 md:py-40" style={{ backgroundColor: "#111111", color: "#fff" }}>
+      <div className="container-x max-w-4xl text-center reveal">
+        <p className="label-eyebrow mb-8 text-accent font-medium tracking-[0.2em]" style={{ fontSize: 12 }}>Strategic Pen</p>
+        <h2 className="h2-display mb-10 text-white leading-tight">
+          Get sharper at content strategy — <span className="text-white/40 italic">free, every two weeks.</span>
+        </h2>
+        <p className="text-white/60 text-lg mb-12 max-w-2xl mx-auto" style={{ fontWeight: 300 }}>
+          Join 1,500+ readers who get actionable insights on positioning, messaging and turning content into a client-generation machine.
+        </p>
+        <div className="flex justify-center">
+          <a
+            href="https://strategicpen.beehiiv.com/subscribe"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="h-16 px-12 text-[14px] font-semibold uppercase flex items-center justify-center bg-white text-black rounded-sm transition-all hover:scale-105 hover:bg-accent hover:text-white shadow-xl shadow-white/5"
+            style={{ letterSpacing: "0.15em" }}
+          >
+            Join the Newsletter →
+          </a>
         </div>
-        <form onSubmit={onSubmit} className="md:col-span-5 reveal w-full">
-          <div className="flex flex-col sm:flex-row gap-3">
-            <input
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="you@work.com"
-              className="flex-1 h-12 px-4 bg-white text-foreground placeholder:text-muted-foreground outline-none"
-              style={{ borderRadius: 4, border: "1px solid #fff" }}
-            />
-            <button
-              type="submit"
-              className="h-12 px-6 text-[13px] font-semibold uppercase"
-              style={{ letterSpacing: "0.1em", backgroundColor: "#fff", color: "hsl(var(--accent))", borderRadius: 4 }}
-            >
-              Subscribe →
-            </button>
-          </div>
-          <p className="text-[12px] mt-4" style={{ color: "rgba(255,255,255,0.85)", fontWeight: 300 }}>
-            No spam. Unsubscribe anytime.
-          </p>
-        </form>
       </div>
     </section>
   );

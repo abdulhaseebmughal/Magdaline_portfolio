@@ -1,7 +1,7 @@
 const items = [
   {
     title: "Content Strategy",
-    desc: "A documented system for what to say, where to say it, and why it earns attention from buyers — not just readers.",
+    desc: "A documented system for what to say, where to say it, and why it earns attention from buyers, not just readers.",
   },
   {
     title: "Done-For-You Writing",
@@ -9,7 +9,7 @@ const items = [
   },
   {
     title: "Positioning & Messaging",
-    desc: "The sentence that makes the right person stop scrolling — and the wrong person keep going.",
+    desc: "The sentence that makes the right person stop scrolling, and the wrong person keep going.",
   },
 ];
 
@@ -29,7 +29,7 @@ const WhatIDo = () => {
             <p className="text-foreground/75" style={{ fontWeight: 300 }}>
               I don't start with calendars or hooks. I start with the diagnosis: who you're for,
               what you actually sell, and the gap between how you describe it and how they search for it.
-              Once that's clear, the content writes itself — and the right buyers show up.
+              Once that's clear, the content writes itself. And the right buyers show up.
             </p>
           </div>
         </div>

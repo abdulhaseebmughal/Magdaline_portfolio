@@ -16,9 +16,9 @@ const Footer = () => {
         </div>
         
         <div className="flex items-center gap-6">
-          <a href="#newsletter" className="hover:text-accent transition-colors">Newsletter</a>
+          <a href="https://linkedin.com/in/magdalinemwihaki" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">LinkedIn</a>
           <a href="#services" className="hover:text-accent transition-colors">Services</a>
-          <a href="https://linkedin.com" target="_blank" className="hover:text-accent transition-colors">LinkedIn</a>
+          <a href="https://topmate.io/magdaline" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Topmate</a>
         </div>
 
         <div className="flex items-center gap-4">

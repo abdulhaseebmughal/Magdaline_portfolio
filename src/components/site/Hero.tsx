@@ -35,11 +35,11 @@ const Hero = () => {
               </p>
               
               <div className="flex flex-wrap gap-4">
-                <a href="#newsletter" className="btn-primary px-10 h-14 rounded-sm shadow-lg shadow-accent/20 transition-all hover:scale-[1.02] flex items-center gap-2">
+                <a href="#contact" className="btn-primary px-10 h-14 rounded-sm shadow-lg shadow-accent/20 transition-all hover:scale-[1.02] flex items-center gap-2">
                   Work With Me <ArrowUpRight className="w-4 h-4" />
                 </a>
-                <a href="#services" className="btn-outline !border-white/20 !text-white hover:!bg-white hover:!text-black px-10 h-14 rounded-sm transition-all flex items-center gap-2">
-                  Read Strategic Pen <ArrowUpRight className="w-4 h-4" />
+                <a href="https://linkedin.com/in/magdalinemwihaki" target="_blank" rel="noopener noreferrer" className="btn-outline !border-white/20 !text-white hover:!bg-white hover:!text-black px-10 h-14 rounded-sm transition-all flex items-center gap-2">
+                  Connect on LinkedIn <ArrowUpRight className="w-4 h-4" />
                 </a>
               </div>
             </div>

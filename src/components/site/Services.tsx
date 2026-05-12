@@ -3,19 +3,23 @@ import ParallaxText from "./ParallaxText";
 const services = [
   {
     title: "Done-For-You Content",
-    desc: "Monthly retainer. I run your LinkedIn and newsletter end-to-end — strategy, writing, distribution.",
+    desc: "Monthly retainer. I run your LinkedIn and newsletter end-to-end: strategy, writing, distribution.",
+    href: "https://topmate.io/magdaline",
   },
   {
     title: "Strategic Pen Newsletter",
     desc: "Free, every two weeks. Sharper thinking on positioning, messaging and getting clients from content.",
+    href: "https://strategicpen.beehiiv.com/subscribe",
   },
   {
-    title: "Gumroad Course",
+    title: "LinkedIn Clarity Course",
     desc: "The exact framework I use to turn a quiet LinkedIn presence into a steady inbound pipeline.",
+    href: "https://topmate.io/magdaline",
   },
   {
     title: "1:1 Strategy Session",
     desc: "90 minutes. We diagnose the message, fix the positioning, and leave with a 30-day plan.",
+    href: "https://topmate.io/magdaline",
   },
 ];
 
@@ -42,7 +46,9 @@ const Services = () => {
               <h3 className="text-[24px] font-semibold mb-4 tracking-tight">{s.title}</h3>
               <p className="text-foreground/70 mb-10 leading-relaxed" style={{ fontWeight: 300, fontSize: "15px" }}>{s.desc}</p>
               <a
-                href="#newsletter"
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-wider group"
                 style={{ color: "hsl(var(--accent))" }}
               >

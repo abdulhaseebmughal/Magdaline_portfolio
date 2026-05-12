@@ -16,7 +16,7 @@ const About = () => {
           </p>
           <p className="text-foreground/70 mb-10 reveal stagger-3" style={{ fontWeight: 300 }}>
             Over the last few years I've helped coaches, consultants and founders turn quiet
-            audiences into inbound pipelines — through Strategic Pen, my newsletter, and through
+            audiences into inbound pipelines: through Strategic Pen, my newsletter, and through
             done-for-you work with a small roster of clients.
           </p>
           <div className="grid grid-cols-2 gap-6 max-w-md">

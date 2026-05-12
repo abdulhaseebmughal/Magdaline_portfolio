@@ -5,7 +5,7 @@ const links = [
   { label: "Work", href: "#work" },
   { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
-  { label: "Newsletter", href: "#newsletter" },
+  { label: "Contact", href: "#contact" },
 ];
 
 const Nav = () => {
